@@ -12,7 +12,7 @@ function refer3()
 }
 function refer4()
 {
-    location.href="login.html";
+    location.href="login_page.html";
 }
 function gotoexplore(){
   location.href="WEBD.html";
