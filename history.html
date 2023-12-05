@@ -1,0 +1,871 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="history.css">
+        <title>Indian Cities History</title>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+        </svg>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+            <style>
+        body{
+            background-color: black;
+        }
+            </style>
+    
+    </head>
+    <body>
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/buttons/2.3.4/js/dataTables.buttons.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+        <script src="https://cdn.datatables.net/buttons/2.3.4/js/buttons.html5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+        
+        <header>
+            <!-- <nav class="navbar navbar-expand-lg" id="nav1"style="width: 1509px;">    
+                <div class="container-fluid" >
+                <img src="town treasure-logos_black.png" style="height:150px; width:200px; top:5px" id="chg3s"
+                    style="background-color:rgb(128, 75, 0)">
+        
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="chg3">
+                        <H2> Routes <BR>to the<BR> City</H1>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="chg3"onclick="refer2()">
+                        <H2> About<BR> Us</H1>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="chg3" onclick="refer3()">
+                        <H2> Contact <BR>Us</H1>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="chg3" onclick="refer4()">
+                        <H2> Login Or<br>
+                            Sign Up</H2>
+                        </a>
+                    </li>
+        
+                    </ul>
+                    
+                </div>
+                </div>
+            </nav> -->
+
+            <nav class="navbar navbar-expand-lg" id="nav1" style="background-color: black;">
+
+                <div class="container-fluid" style="background-color: black;">
+        
+                <img src="town treasure-logos_white.png" style="height:80px; width:200px; top:5px" id="chg3s"
+                    style="background-color:rgb(0, 0, 0)">
+            
+                <a class="navbar-brand" href="#" onclick="refer1()" id="chg3">
+                    <h5 style="color: white; margin-top: 20px;" onclick="gotohome()">HOME</h5>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="chg3">
+                        <br>
+                        <H5 onclick="gotoexplore()" style="color: white; margin-right: 10px; "> Explore the City</H5>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="chg3"><br>
+                        <H5 onclick="gotoaboutus()" style="color: white;  margin-right: 10px;"> About Us</H5>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="chg3"><br>
+                        <H5 onclick="gotocontactus()" style="color: white; margin-right: 10px;"> Contact Us</H5>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="chg3"><br>
+                        <H5 onclick="gotologin()" style="color: white; margin-right: 10px;"> Login </H5>
+                        </a>
+                    </li>
+            
+                    </ul>
+                    <form class="d-flex" role="search" id="bt">
+            
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-primary" type="submit">Search</button>
+                    </form>
+                </div>
+                </div>
+            </nav>
+        
+            <h1>History AND HERITAGE </h1>
+        </header>
+        <nav>
+            <ul>
+            <li><a href="#delhi">Delhi</a></li>
+            <li><a href="#mumbai">Mumbai</a></li>
+            <li><a href="#kolkata">Kolkata</a></li>
+            <li><a href="#bengaluru">Bengaluru</a></li>
+            <li><a href="#hyderabad">Hyderabad</a></li>
+            <li><a href="#chennai">Chennai</a></li>
+            <li><a href="#kolkata">Kolkata</a></li>
+            <li><a href="#jaipur">Jaipur</a></li>
+            <li><a href="#ahmedabad">Ahmedabad</a></li>
+            <li><a href="#pune">Pune</a></li>
+            <li><a href="#lucknow">Lucknow</a></li>
+            <li><a href="#varanasi">Varanasi</a></li>
+            <li><a href="#amritsar">Amritsar</a></li>
+            <li><a href="#chandigarh">Chandigarh</a></li>
+            <li><a href="#goa">Goa</a></li>
+            <li><a href="#patna">Patna</a></li>
+            <li><a href="#rajkot">Rajkot</a></li>
+            <li><a href="#guwahati">Guwahati</a></li>
+            <li><a href="#nagpur">Nagpur</a></li>
+            <li><a href="#thiruvananthapuram">Thiruvananthapuram</a></li>
+            <li><a href="#indore">Indore</a></li>
+            <li><a href="#ludhiana">Ludhiana</a></li>
+            <li><a href="#vadodara">Vadodara</a></li>
+            <li><a href="#raipur">Raipur</a></li>
+            <li><a href="#visakhapatnam">Visakhapatnam</a></li>
+            <li><a href="#kanpur">Kanpur</a></li>
+            <li><a href="#mysuru">Mysuru</a></li>
+            <li><a href="#kochi">Kochi</a></li>
+            <li><a href="#srinagar">Srinagar</a></li>
+            <li><a href="#aurangabad">Aurangabad</a></li>
+            <li><a href="#surat">Surat</a></li>
+            <li><a href="#coimbatore">Coimbatore</a></li>
+            <li><a href="#jodhpur">Jodhpur</a></li>
+            <li><a href="#madurai">Madurai</a></li>
+            <li><a href="#nashik">Nashik</a></li>
+            <li><a href="#meerut">Meerut</a></li>
+            <li><a href="#faridabad">Faridabad</a></li>
+            <li><a href="#jamshedpur">Jamshedpur</a></li>
+            <li><a href="#kota">Kota</a></li>
+            <li><a href="#kollam">Kollam</a></li>
+            <li><a href="#ranchi">Ranchi</a></li>
+            <li><a href="#alappuzha">Alappuzha</a></li>
+            <li><a href="#mangalore">Mangalore</a></li>
+            <li><a href="#thrissur">Thrissur</a></li>
+            <li><a href="#gwalior">Gwalior</a></li>
+            <li><a href="#amravati">Amravati</a></li>
+            <li><a href="#kollam">Kollam</a></li>
+            <li><a href="#rourkela">Rourkela</a></li>
+            <li><a href="#durgapur">Durgapur</a></li>
+            <li><a href="#warangal">Warangal</a></li>
+            <li><a href="#guntur">Guntur</a></li>
+            <li><a href="#kapurthala">Kapurthala</a></li>
+            <li><a href="#saharanpur">Saharanpur</a></li>
+            <li><a href="#mathura">Mathura</a></li>
+            <li><a href="#bilaspur">Bilaspur</a></li>
+            <li><a href="#gaya">Gaya</a></li>
+            <li><a href="#tirunelveli">Tirunelveli</a></li>
+            <li><a href="#udaipur">Udaipur</a></li>
+            <li><a href="#ujjain">Ujjain</a></li>
+            <li><a href="#bokaro">Bokaro Steel City</a></li>
+            <li><a href="#dhanbad">Dhanbad</a></li>
+            <li><a href="#sambalpur">Sambalpur</a></li>
+            <li><a href="#gorakhpur">Gorakhpur</a></li>
+            <li><a href="#muzaffarpur">Muzaffarpur</a></li>
+            <li><a href="#aligarh">Aligarh</a></li>
+            <li><a href="#bareilly">Bareilly</a></li>
+            <li><a href="#kozhikode">Kozhikode</a></li>
+            <li><a href="#shimla">Shimla</a></li>
+            <li><a href="#kharagpur">Kharagpur</a></li>
+            <li><a href="#karnal">Karnal</a></li>
+            <li><a href="#bharatpur">Bharatpur</a></li>
+            <li><a href="#pathankot">Pathankot</a></li>
+            <li><a href="#sonipat">Sonipat</a></li>
+            <li><a href="#firozabad">Firozabad</a></li>
+            <li><a href="#panipat">Panipat</a></li>
+            <li><a href="#hisar">Hisar</a></li>
+            <li><a href="#ratlam">Ratlam</a></li>
+            <li><a href="#dharwad">Dharwad</a></li>
+            <li><a href="#tiruppur">Tiruppur</a></li>
+            <li><a href="#noida">Noida</a></li>
+            <li><a href="#ambala">Ambala</a></li>
+            <li><a href="#nellore">Nellore</a></li>
+            <li><a href="#kurukshetra">Kurukshetra</a></li>
+            <li><a href="#kurukshetra">Dhar</a></li>
+            </ul>
+        </nav>
+        
+        <div class="search-container">
+            <form action="#" method="get">
+                <input type="text" id="search-input" class="search-input" name="search" placeholder="Search...">
+                <button type="submit" class="search-button">search</button>
+            </form>
+        </div>
+        <i class="bi bi-search"></i>
+
+        <main style="background-color: black;">
+            <video
+            autoplay
+            loop
+            muted
+            src="production_id_4460336 (1080p).mp4"
+        ></video>
+            <section id="delhi">
+                <h2>Delhi</h2>
+                <p>Delhi is the capital of India and has a rich history...</p>
+            </section>
+            <section id="mumbai">
+                <h2>Mumbai</h2>
+                <p>Mumbai, formerly known as Bombay, is the largest city...</p>
+            </section>
+            <section id="kolkata">
+                <h2>Kolkata</h2>
+                <p>Kolkata, the capital of West Bengal, is known for its...</p>
+            </section>
+            <section id="bengaluru">
+                <h2>Bengaluru</h2>
+                <p>
+                    Bengaluru, also known as Bangalore, is the capital of the Indian state of Karnataka.
+                    It is often referred to as the "Silicon Valley of India" due to its prominent
+                    IT and technology industry. Bengaluru is a city of contrasts, combining modern
+                    skyscrapers with historical landmarks and lush green spaces.
+                </p>
+            </section>
+            <section id="hyderabad">
+                <h2>Hyderabad</h2>
+                <p>
+                    Hyderabad is the capital of the Indian state of Telangana and is known for its rich history,
+                    including the Qutb Shahi and Nizam dynasties. The city is famous for its delicious biryani and
+                    the iconic Charminar monument.
+                </p>
+            </section>
+        
+            <section id="chennai">
+                <h2>Chennai</h2>
+                <p>
+                    Chennai, formerly known as Madras, is the capital of the state of Tamil Nadu. It is a city with
+                    a rich cultural heritage and is known for its classical music, dance, and historical landmarks
+                    like Marina Beach and Fort St. George.
+                </p>
+            </section>
+        
+            <section id="kolkata">
+                <h2>Kolkata</h2>
+                <p>
+                    Kolkata, the capital of the state of West Bengal, has a significant place in India's history.
+                    It was the capital of British India until 1911 and is known for its intellectual and cultural
+                    contributions. The city is famous for the Howrah Bridge and the Victoria Memorial.
+                </p>
+            </section>
+            <section id="jaipur">
+                <h2>Jaipur</h2>
+                <p>
+                    Jaipur is the capital of the Indian state of Rajasthan and is known for its rich history,
+                    colorful architecture, and vibrant culture. The city is often referred to as the "Pink City"
+                    due to its distinctive pink-colored buildings.
+                </p>
+            </section>
+        
+            <section id="ahmedabad">
+                <h2>Ahmedabad</h2>
+                <p>
+                    Ahmedabad is the largest city in the state of Gujarat and is renowned for its association with
+                    Mahatma Gandhi. The Sabarmati Ashram, a place closely associated with Gandhi's life, is located in Ahmedabad.
+                </p>
+            </section>
+        
+            <section id="pune">
+                <h2>Pune</h2>
+                <p>
+                    Pune, in the state of Maharashtra, is known for its educational institutions and historical significance.
+                    It is often referred to as the "Oxford of the East" due to the presence of several prestigious colleges
+                    and universities.
+                </p>
+            </section>
+        
+            <section id="lucknow">
+                <h2>Lucknow</h2>
+                <p>
+                    Lucknow, the capital of the state of Uttar Pradesh, has a rich cultural heritage and is known for its
+                    Nawabi culture, historical monuments, and delicious cuisine, including kebabs and biryani.
+                </p>
+            </section>
+        
+            <section id="varanasi">
+                <h2>Varanasi</h2>
+                <p>
+                    Varanasi, one of the oldest continuously inhabited cities in the world, is a spiritual and cultural hub
+                    on the banks of the Ganges River. It is a pilgrimage site for Hindus and is known for its ghats and temples.
+                </p>
+            </section>
+        
+            <section id="amritsar">
+                <h2>Amritsar</h2>
+                <p>
+                    Amritsar is a city in the state of Punjab and is known for its iconic Golden Temple (Harmandir Sahib),
+                    which is a sacred site for Sikhs. The city is also famous for its vibrant culture and cuisine.
+                </p>
+            </section>
+        
+            <section id="chandigarh">
+                <h2>Chandigarh</h2>
+                <p>
+                    Chandigarh is a well-planned city and serves as the capital of both Punjab and Haryana. It is known for
+                    its modern architecture and urban design, and it was designed by the renowned architect Le Corbusier.
+                </p>
+            </section>
+        
+            <section id="goa">
+                <h2>Goa</h2>
+                <p>
+                    Goa is a coastal state known for its beautiful beaches, rich history, and vibrant nightlife. It was a
+                    Portuguese colony for centuries and has a unique blend of Indian and Western cultures.
+                </p>
+            </section>
+        
+            <section id="patna">
+                <h2>Patna</h2>
+                <p>
+                    Patna, the capital of the state of Bihar, has a significant historical legacy. It was a center of learning
+                    and culture in ancient India and is associated with several historical figures and events.
+                </p>
+            </section>
+            <section id="rajkot">
+                <h2>Rajkot</h2>
+                <p>
+                    Rajkot is a city in the state of Gujarat and is known for its traditional handicrafts, jewelry, and silk
+                    embroidery. It is also the birthplace of Mahatma Gandhi.
+                </p>
+            </section>
+                <!-- Continue adding sections for other cities with their respective histories -->
+        <section id="guwahati">
+            <h2>Guwahati</h2>
+            <p>
+                Guwahati is the largest city in the Indian state of Assam and is known for its scenic beauty,
+                ancient temples, and cultural significance. The Kamakhya Temple is one of the most prominent
+                religious sites in the city.
+            </p>
+        </section>
+
+        <section id="nagpur">
+            <h2>Nagpur</h2>
+            <p>
+                Nagpur is the winter capital of the state of Maharashtra and is famous for its oranges.
+                The city is also known for its historical landmarks and is often called the "Tiger Capital of India"
+                due to its proximity to several tiger reserves.
+            </p>
+        </section>
+
+        <section id="thiruvananthapuram">
+            <h2>Thiruvananthapuram</h2>
+            <p>
+                Thiruvananthapuram, the capital of the state of Kerala, is known for its beautiful beaches,
+                historic palaces, and cultural heritage. The city has a tropical climate and is a popular tourist
+                destination.
+            </p>
+        </section>
+
+        <section id="indore">
+            <h2>Indore</h2>
+            <p>
+                Indore, in the state of Madhya Pradesh, is known for its culinary delights and is often called the
+                "Food Capital of India." The city also boasts historical sites and a thriving business and trade
+                environment.
+            </p>
+        </section>
+
+        <section id="ludhiana">
+            <h2>Ludhiana</h2>
+            <p>
+                Ludhiana, in the state of Punjab, is an industrial city known for its manufacturing and textile
+                industries. It is also a cultural hub with a rich tradition of music, dance, and festivals.
+            </p>
+        </section>
+
+        <section id="vadodara">
+            <h2>Vadodara</h2>
+            <p>
+                Vadodara, also known as Baroda, is a city in the state of Gujarat and is known for its palaces,
+                museums, and educational institutions. The city has a rich history and is a center for art and culture.
+            </p>
+        </section>
+
+        <section id="raipur">
+            <h2>Raipur</h2>
+            <p>
+                Raipur is the capital of the state of Chhattisgarh and is known for its rapidly developing economy
+                and infrastructure. It has a mix of modern and traditional elements, making it a diverse and vibrant city.
+            </p>
+        </section>
+
+        <section id="visakhapatnam">
+            <h2>Visakhapatnam</h2>
+            <p>
+                Visakhapatnam, often referred to as Vizag, is a coastal city in Andhra Pradesh. It is known for its
+                natural beauty, beaches, and a growing information technology sector.
+            </p>
+        </section>
+
+        <section id="kanpur">
+            <h2>Kanpur</h2>
+            <p>
+                Kanpur, in the state of Uttar Pradesh, has a rich industrial history and is famous for its leather
+                and textile industries. It also has several historical sites and educational institutions.
+            </p>
+        </section>
+
+        <section id="mysuru">
+            <h2>Mysuru</h2>
+            <p>
+                Mysuru, also known as Mysore, is a city in the state of Karnataka known for its royal heritage,
+                beautiful palaces, and the famous Mysore Dasara festival.
+            </p>
+        </section>
+            <!-- Continue adding sections for other cities with their respective histories -->
+            <section id="kochi">
+                <h2>Kochi</h2>
+                <p>
+                    Kochi, also known as Cochin, is a coastal city in the state of Kerala. It is known for its
+                    picturesque backwaters, historic Fort Kochi, and a diverse cultural heritage influenced by various
+                    foreign traders and settlers.
+                </p>
+            </section>
+        
+            <section id="srinagar">
+                <h2>Srinagar</h2>
+                <p>
+                    Srinagar is the summer capital of the union territory of Jammu and Kashmir. It is famous for its
+                    beautiful Dal Lake, houseboats, and Mughal gardens. The city offers a serene and scenic environment.
+                </p>
+            </section>
+        
+            <section id="aurangabad">
+                <h2>Aurangabad</h2>
+                <p>
+                    Aurangabad is a city in the state of Maharashtra and is known for its historical and cultural
+                    significance. It is home to the famous Ajanta and Ellora Caves, UNESCO World Heritage Sites.
+                </p>
+            </section>
+        
+            <section id="surat">
+                <h2>Surat</h2>
+                <p>
+                    Surat is a city in the state of Gujarat and is known for its diamond and textile industries. It is
+                    a major business and trade hub and has a rich culinary heritage.
+                </p>
+            </section>
+        
+            <section id="coimbatore">
+                <h2>Coimbatore</h2>
+                <p>
+                    Coimbatore is a city in the state of Tamil Nadu and is an industrial and educational center in
+                    South India. It is known for its engineering and textile industries and is often called the
+                    "Manchester of South India."
+                </p>
+            </section>
+        
+            <section id="jodhpur">
+                <h2>Jodhpur</h2>
+                <p>
+                    Jodhpur, in the state of Rajasthan, is known as the "Blue City" due to the blue-painted buildings
+                    in the old part of the city. It is famous for the majestic Mehrangarh Fort and its cultural heritage.
+                </p>
+            </section>
+        
+            <section id="madurai">
+                <h2>Madurai</h2>
+                <p>
+                    Madurai, one of the oldest cities in India, is known for the Meenakshi Amman Temple, a historic
+                    and architectural marvel. The city has a rich cultural and religious heritage.
+                </p>
+            </section>
+        
+            <section id="nashik">
+                <h2>Nashik</h2>
+                <p>
+                    Nashik is a city in Maharashtra and is known for its association with the Hindu epic Ramayana.
+                    It is a major pilgrimage site, and the Kumbh Mela, a major festival, is held here.
+                </p>
+            </section>
+        
+            <section id="meerut">
+                <h2>Meerut</h2>
+                <p>
+                    Meerut is a city in the state of Uttar Pradesh and is known for its historical significance.
+                    It played a significant role in the Indian Rebellion of 1857 against British colonial rule.
+                </p>
+            </section>
+        
+            <section id="faridabad">
+                <h2>Faridabad</h2>
+                <p>
+                    Faridabad is a city in the state of Haryana and is known for its industrial and manufacturing sectors.
+                    It is part of the National Capital Region (NCR) and has a growing economy.
+                </p>
+            </section>
+        
+                <!-- Continue adding sections for other cities with their respective histories -->
+        <section id="jamshedpur">
+            <h2>Jamshedpur</h2>
+            <p>
+                Jamshedpur is a planned city in the state of Jharkhand and is known for its steel industry.
+                It was founded by the visionary industrialist Jamsetji Tata and is often called the "Steel City."
+            </p>
+        </section>
+
+        <section id="kota">
+            <h2>Kota</h2>
+            <p>
+                Kota, in the state of Rajasthan, is a major coaching center for competitive exams. It is known for its
+                educational institutions and has earned the nickname "Education City."
+            </p>
+        </section>
+
+        <section id="kollam">
+            <h2>Kollam</h2>
+            <p>
+                Kollam, also known as Quilon, is a city in the state of Kerala. It is known for its historic port and
+                cashew processing industry. Kollam is a gateway to the famous backwaters of Kerala.
+            </p>
+        </section>
+
+        <section id="ranchi">
+            <h2>Ranchi</h2>
+            <p>
+                Ranchi is the capital of the state of Jharkhand and is known for its scenic beauty and natural resources.
+                The city is surrounded by lush greenery and hills, making it a picturesque destination.
+            </p>
+        </section>
+
+        <section id="alappuzha">
+            <h2>Alappuzha</h2>
+            <p>
+                Alappuzha, often called Alleppey, is a city in Kerala known for its intricate network of backwaters and
+                serene houseboat rides. It is a popular destination for nature lovers and tourists.
+            </p>
+        </section>
+
+        <section id="mangalore">
+            <h2>Mangalore</h2>
+            <p>
+                Mangalore is a coastal city in the state of Karnataka and is known for its beautiful beaches,
+                temples, and vibrant culture. The city is also a major port on the Arabian Sea.
+            </p>
+        </section>
+
+        <section id="thrissur">
+            <h2>Thrissur</h2>
+            <p>
+                Thrissur, often referred to as the "Cultural Capital of Kerala," is known for its cultural festivals
+                and heritage. The city is famous for the Thrissur Pooram festival and historic temples.
+            </p>
+        </section>
+
+        <section id="gwalior">
+            <h2>Gwalior</h2>
+            <p>
+                Gwalior is a city in the state of Madhya Pradesh and is known for its historic Gwalior Fort, which has
+                a rich history and architectural significance. The city is also known for its classical music tradition.
+            </p>
+        </section>
+
+        <section id="amravati">
+            <h2>Amravati</h2>
+            <p>
+                Amravati is a city in Maharashtra and is known for its historical temples, educational institutions,
+                and cultural heritage. It is a blend of tradition and modernity.
+            </p>
+        </section>
+
+        <section id="kollam">
+            <h2>Kollam</h2>
+            <p>
+                Kollam, also known as Quilon, is a city in the state of Kerala. It is known for its historic port and
+                cashew processing industry. Kollam is a gateway to the famous backwaters of Kerala.
+            </p>
+        </section>
+
+            <!-- Continue adding sections for other cities with their respective histories -->
+            <section id="rourkela">
+                <h2>Rourkela</h2>
+                <p>
+                    Rourkela is a planned city located in the state of Odisha. It is known for its steel plant,
+                    educational institutions, and a diverse culture. The city has a mix of urban and natural attractions.
+                </p>
+            </section>
+        
+            <section id="durgapur">
+                <h2>Durgapur</h2>
+                <p>
+                    Durgapur is an industrial city in the state of West Bengal. It is known for its steel and
+                    alloy industries and has a well-planned layout. The city offers a blend of modernity and tradition.
+                </p>
+            </section>
+        
+            <section id="warangal">
+                <h2>Warangal</h2>
+                <p>
+                    Warangal is a historical city in the Indian state of Telangana. It was once the capital of the Kakatiya
+                    Dynasty and is known for its ancient temples, including the Thousand Pillar Temple.
+                </p>
+            </section>
+        
+            <section id="guntur">
+                <h2>Guntur</h2>
+                <p>
+                    Guntur is a city in the state of Andhra Pradesh and is known for its agriculture and educational
+                    institutions. The city has a rich cultural heritage and is famous for its spicy cuisine.
+                </p>
+            </section>
+        
+            <section id="kapurthala">
+                <h2>Kapurthala</h2>
+                <p>
+                    Kapurthala is a city in the state of Punjab and is known for its historical and architectural
+                    landmarks. The city's architecture is influenced by both French and Indo-Saracenic styles.
+                </p>
+            </section>
+        
+            <section id="saharanpur">
+                <h2>Saharanpur</h2>
+                <p>
+                    Saharanpur is a city in the state of Uttar Pradesh and is known for its woodworking industry,
+                    particularly the crafting of wooden furniture and artifacts.
+                </p>
+            </section>
+        
+            <section id="mathura">
+                <h2>Mathura</h2>
+                <p>
+                    Mathura is a city in the Indian state of Uttar Pradesh and is revered as the birthplace of Lord Krishna.
+                    The city has numerous temples, including the Krishna Janmabhoomi Temple.
+                </p>
+            </section>
+        
+            <section id="bilaspur">
+                <h2>Bilaspur</h2>
+                <p>
+                    Bilaspur is a city in the state of Chhattisgarh and is known for its cultural festivals, unique cuisine,
+                    and the historic Chakradhar Samaroh festival.
+                </p>
+            </section>
+        
+            <section id="gaya">
+                <h2>Gaya</h2>
+                <p>
+                    Gaya is a city in the state of Bihar and is a major religious center for Buddhists. It is home to the
+                    Mahabodhi Temple, a UNESCO World Heritage Site.
+                </p>
+            </section>
+        
+            <section id="tirunelveli">
+                <h2>Tirunelveli</h2>
+                <p>
+                    Tirunelveli is a city in the state of Tamil Nadu and is known for its rich cultural heritage and
+                    distinctive cuisine. The city has historical temples and a vibrant arts scene.
+                </p>
+            </section>
+        
+                <!-- Continue adding sections for other cities with their respective histories -->
+        <section id="ujjain">
+            <h2>Ujjain</h2>
+            <p>
+                Ujjain is an ancient city in the state of Madhya Pradesh and is considered one of the seven
+                holiest cities in Hinduism. It is known for the Mahakaleshwar Jyotirlinga temple and the Kumbh Mela.
+            </p>
+        </section>
+
+        <section id="dehradun">
+            <h2>Dehradun</h2>
+            <p>
+                Dehradun is the capital city of the Indian state of Uttarakhand. It is known for its picturesque
+                landscapes, educational institutions, and pleasant climate. The city is a gateway to the Himalayas.
+            </p>
+        </section>
+
+        <section id="dhanbad">
+            <h2>Dhanbad</h2>
+            <p>
+                Dhanbad is a city in the state of Jharkhand and is often referred to as the "Coal Capital of India."
+                It has a significant coal mining industry and is an industrial hub.
+            </p>
+        </section>
+
+        <section id="raichur">
+            <h2>Raichur</h2>
+            <p>
+                Raichur is a city in the Indian state of Karnataka and is known for its historical sites,
+                including the Raichur Fort and the Ek Minar Ki Masjid. It has a rich cultural heritage.
+            </p>
+        </section>
+
+        <section id="kakinada">
+            <h2>Kakinada</h2>
+            <p>
+                Kakinada is a coastal city in the state of Andhra Pradesh and is known for its scenic beaches,
+                thriving port, and seafood. The city has a maritime and cultural heritage.
+            </p>
+        </section>
+
+        <section id="belagavi">
+            <h2>Belagavi</h2>
+            <p>
+                Belagavi, also known as Belgaum, is a city in the state of Karnataka. It is known for its lush greenery,
+                historic sites, and cultural diversity. The city has a blend of Kannada and Marathi cultures.
+            </p>
+        </section>
+
+        <section id="ajmer">
+            <h2>Ajmer</h2>
+            <p>
+                Ajmer is a city in the state of Rajasthan and is famous for the Ajmer Sharif Dargah, a Sufi shrine.
+                It has a rich historical and religious significance and is a major pilgrimage site.
+            </p>
+        </section>
+
+        <section id="gulbarga">
+            <h2>Gulbarga</h2>
+            <p>
+                Gulbarga, now known as Kalaburagi, is a city in Karnataka and is known for its historical
+                monuments, including the Gulbarga Fort and the Sharana Basaveshwara Temple.
+            </p>
+        </section>
+
+        <section id="panipat">
+            <h2>Panipat</h2>
+            <p>
+                Panipat is a historic city in Haryana and is known for its role in three significant battles of
+                Indian history. The city has a rich historical legacy and is known for its textiles and carpets.
+            </p>
+        </section>
+
+        <section id="nizamabad">
+            <h2>Nizamabad</h2>
+            <p>
+                Nizamabad is a city in the Indian state of Telangana. It is known for its cultural diversity,
+                historic sites, and agricultural activities. The city is named after the Nizams of Hyderabad.
+            </p>
+        </section>
+
+        <section id="kollam">
+            <h2>Kollam</h2>
+            <p>
+                Kollam, also known as Quilon, is a city in the state of Kerala. It is known for its historic port and
+                cashew processing industry. Kollam is a gateway to the famous backwaters of Kerala.
+            </p>
+        </section>
+
+        <section id="rajahmundry">
+            <h2>Rajahmundry</h2>
+            <p>
+                Rajahmundry is a city in Andhra Pradesh and is known for its cultural heritage, scenic landscapes,
+                and the Godavari River. It is often referred to as the "Cultural Capital of Andhra Pradesh."
+            </p>
+        </section>
+
+        <section id="bikaner">
+            <h2>Bikaner</h2>
+            <p>
+                Bikaner is a city in the state of Rajasthan and is known for its forts, palaces, and unique sweets.
+                The city's Junagarh Fort is a prominent historical site.
+            </p>
+        </section>
+
+        <section id="bharatpur">
+            <h2>Bharatpur</h2>
+            <p>
+                Bharatpur is a city in the state of Rajasthan and is famous for the Keoladeo National Park, a UNESCO
+                World Heritage Site. It is a significant bird sanctuary and attracts birdwatchers and nature enthusiasts.
+            </p>
+        </section>
+
+        <section id="Dhar">
+            <h2>Dhar</h2>
+            <p>City of Raja Bhoj Dhar. Dhar is City of Madhya Pradesh.
+                Mandav of Dhar district is the world famous historical tourist destination, where thousands of foreign tourists visit every year. Jahaj Mahal, Rani Rupmati Mahal, Hindola Mahal, Jami Masjid, Nilkantheshwar Mahadev Temple, Shriram Temple, Hathi Darwaja etc.</p>
+        </section>
+        </div>
+        </div>
+        <div class="foot" style="background-color: black;">
+            <div class="footer" style="margin-top: 35px; height: 90px; width: 100vw; display: flex; flex-direction: column; background-color: black;">
+                <div class="foot" style="justify-content: center; align-items: center; display: flex; font-size: larger;
+                    font-family: cursive; color:white; box-sizing: border-box; background-color: black;">
+                    Copyright &copy; 2023
+                    <img id="footimg"  style="height: 50px; width: 70px;" src="town treasure-logos_black.png" alt="">
+                </div>
+                <br>
+                    
+                <div style="display: flex; flex-direction: column; background-color: black;">
+                
+                </div>
+                <button type="button" class="btn btn-outline-light" style="width: 10%; display: inline-block; margin-left: 45%;  background-color: black;"><a class="nav-link active" aria-current="page"
+                    href="aboutus.html">About Us</a></button>
+                    <br>
+                    <button type="button" class="btn btn-outline-light" style="width: 10%; display: inline-block;  margin-left: 45%;background-color: black;"><a class="nav-link active" aria-current="page"
+                        href="contactus.html">Contact Us</a></button>
+                        <br>
+                        <p style="justify-content: center; align-items: center; display: flex; font-size: larger;
+                        font-family: cursive; color:white; box-sizing: border-box;background-color: black;">"Embark on a journey of discovery with Your Tourism Website, where every destination becomes an adventure and every trip a story. Immerse your
+                        self in the beauty of diverse landscapes, from breathta
+                        king mountains to sun-kissed beaches, as we curate unforgettable tr
+                        avel experiences. Our expertly crafted tours and packages cater to the wanderl
+                        ust in you, promising not just a vacation but a transformative exploration.
+                        Stay updated on the latest travel trends and
+                        tips through our engaging blog, and connect with us on social media for a vibrant
+                        community of fellow explorers. At Your Tourism Website, we don't just offer destinations; we provide gateways to memories. Let's travel together and create stories that last a lifetime."</p>
+            </div>
+            </div>
+    </div>
+
+        
+
+
+        
+        
+        
+        
+        
+        
+
+        </main>
+        <script >
+        
+            function gotohome(){
+                window.location.href='1.html';
+            }
+            function gotoaboutus(){
+                window.location.href='aboutus.html';
+            }
+            function gotoexplore(){
+                window.location.href='WEBD.html';
+            }
+            function gotologin(){
+                window.location.href='login_page.html';
+            }
+            function gotocontactus(){
+                window.location.href='contactus.html';
+            }
+        </script>
+        
+    </body>
+    </html>

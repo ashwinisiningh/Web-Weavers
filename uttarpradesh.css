@@ -1,0 +1,25 @@
+
+.card{
+    box-shadow: 2px 2px 2px 2px black;
+    border: 10px solid black;
+    
+}
+.card:hover{
+    border:2px solid black
+}
+.container-fluid{
+    height: 40px;
+    margin-right: 60px;
+
+}
+body{
+    
+    background-image: url(https://e0.pxfuel.com/wallpapers/1010/450/desktop-wallpaper-iphone-gradient-minimalist-gradient.jpg);
+    background-size: cover;
+
+    
+}
+#heading{
+    color: white;
+    text-shadow: 4px 3px black;
+}

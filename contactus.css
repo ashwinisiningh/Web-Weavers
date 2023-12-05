@@ -1,0 +1,106 @@
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+  }
+.header{
+      background-color:rgb(255, 253, 253);
+      text-align: center;
+      width: 60%;
+      height: 1px;
+      margin-left:300px;
+      padding-bottom: 80px;
+      border:rgb(244, 137, 137) solid 1px;
+      
+  
+      
+  }
+  body{
+      background-color:rgb(244, 137, 137) ;
+  }
+  .head{
+      
+      font-style: normal;
+      color:black;
+      
+  }
+  
+  .content{
+      text-align: center;
+      background-color: rgb(17, 4, 4);
+      width: 400px;
+      height:450px;
+      margin:40px 550px;
+  
+      color:white;
+      border-radius: 10px;
+      padding-top: 50px;
+      
+
+  }
+  
+  
+  .table{
+      background-color:white;
+      color: black;
+      width: 100%;
+      border-bottom-right-radius:10px;
+      border-bottom-left-radius:10px;
+     
+
+  }
+  button {
+      background-color: #333;
+      color: white;
+      margin-right:150px ;
+      border: none;
+      cursor: pointer;
+      height: 30px;
+      
+      
+  }
+  button:hover {
+      background-color: #555;
+  }
+  
+  .form{
+      padding-top: 100px;
+  }
+  
+  #navb{
+
+background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 18%, rgba(100,109,255,1) 100%); 
+background: rgb(65,62,63);
+background: radial-gradient(circle, rgba(65,62,63,0.7596288515406162) 42%, rgba(100,102,119,0.8380602240896359) 100%);
+height: 50px;
+width: 100%;
+background: rgb(65,62,63);
+background: linear-gradient(90deg, rgba(65,62,63,0.7652310924369747) 42%, rgba(64,65,70,0.7232142857142857) 100%);
+}
+.content{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+#nav1 {
+height: 130px;
+background-color: rgb(8, 7, 7);
+opacity: 1;
+padding: 50px;
+display:flex;
+align-content:center;
+height:140px;
+
+}
+#chg3 {
+color: rgb(250, 250, 250);
+margin: 20px;
+font-family: 'Comic Neue', cursive;
+text-align: center;
+
+}
+
