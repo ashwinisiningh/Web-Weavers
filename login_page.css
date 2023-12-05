@@ -39,7 +39,7 @@ height: 35px;
         display: inline-block;
         white-space: nowrap;
         overflow: hidden;
-        animation: typeAnimation 3s steps(40, end) forwards; /* Adjust the duration as needed */
+        animation: typeAnimation 3s steps(40, end) forwards infinite; /* Adjust the duration as needed */
         border-right: 2px solid; /* Optional: simulate a typing cursor */
         margin-right: 5px; /* Optional: adjust spacing */
     }
