@@ -125,7 +125,7 @@ video {
   .cont{
     display: flex;
     flex-direction: column;
-   
+   padding:50px 100px;
     justify-content: space-between;
     align-items: center;
   }
@@ -155,8 +155,8 @@ video {
     color: #55205c;
   }
   .img img{
-    height: 400px;
-    width: 500px;
+    height: 70%;
+    width: 100%;
 
   }
   .show{
