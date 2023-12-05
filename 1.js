@@ -2,7 +2,7 @@
 {
     location.href="history.html";
 }
-function refer2()
+function gotoaboutus()
 {
     location.href="aboutus.html";
 }
