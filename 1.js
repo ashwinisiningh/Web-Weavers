@@ -1,18 +1,18 @@
  function refer1()
 {
-    location.href="history (4).html";
+    location.href="history.html";
 }
 function refer2()
 {
-    location.href="About_Us";
+    location.href="aboutus.html";
 }
 function refer3()
 {
-    location.href="cotact_us";
+    location.href="contactus.html";
 }
 function refer4()
 {
-    location.href="login_signup";
+    location.href="login.html";
 }
 let t = document.getElementById("chg1");
 
