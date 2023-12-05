@@ -1,0 +1,107 @@
+
+ @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "montserrat";
+    color: #fff;
+}
+
+html,
+body {
+    height: 100%;
+
+    width: 100%;
+}
+body {
+    overflow-x: hidden;
+}
+#cursor {
+    height: 20px;
+    width: 20px;
+    background-color: #95c11e;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 99;
+    transition: all linear 0.1s;
+}
+#cursor-blur {
+    height: 500px;
+    width: 500px;
+    background-color: rgba(150, 193, 30, 0.3);
+    border-radius: 50%;
+    position: fixed;
+    filter: blur(80px);
+    z-index: 9;
+    transition: all linear 0.4s;
+}
+video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+    position: fixed;
+}
+.c{
+    background-color: red;
+    width: 100%;
+    height: 1200px;
+    background-image: url('WhatsApp Image 2023-12-03 at 1.14.54 PM.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+.footer{
+    margin-top: 35px;
+    height: 110px;
+    width: 100vw;
+    display: flex;
+    background-color: black;
+    flex-direction: column;
+    }
+    .foot{
+    justify-content: center;
+    /* align-items: center; */
+    display: flex;
+    font-size: larger;
+    font-family: cursive;
+    box-sizing: border-box;
+    background-color: black;
+    height: 520px;
+    
+    }
+    #footimg{
+    
+      height: 50px;
+      width: 70px;
+    }
+    .main{
+      display: flex;;
+      box-sizing: border-box;;
+      flex-direction: column;
+    }
+    p{
+      width: 80%;
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+    #put
+    {
+        font-family: "montserrat";
+        background-color: #000;
+        font-size: 20px;
+        height:500px;
+        width:500px;
+        display:flex;
+        align-content: center;
+        justify-content: center;
+        padding:100px;
+    }
+
