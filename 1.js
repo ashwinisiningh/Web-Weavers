@@ -30,4 +30,4 @@ targetElement.addEventListener("mouseover", () => {
 targetElement.addEventListener("mouseout", () => {
   hiddenImage.style.display = "none"; // Hide the image on mouseout
 });
-
+}
