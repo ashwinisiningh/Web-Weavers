@@ -37,45 +37,58 @@
     </style>
   </head>
   <body>
-   <div id="navbar_box">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-        <div class="container-fluid">
-            <img src="town treasure-logos_white.png" alt="" width="100px" height="80px" style="margin-left: 10px; margin-right: 30px;">
-          <a class="navbar-brand" href="#">WELCOME </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">about us</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  View MORE
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">contact us</a></li>
-                  <li><a class="dropdown-item" href="#">information about the creators</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">feedback</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true"></a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
+   
+    <nav class="navbar navbar-expand-lg" id="nav1" style="background-color: black;">
+
+      <div class="container-fluid" style="background-color: black;">
+    
+        <img src="town treasure-logos_white.png" style="height:80px; width:200px; top:5px" id="chg3s"
+          style="background-color:rgb(0, 0, 0)">
+    
+        <a class="navbar-brand" href="#" onclick="gotohome()" id="chg3">
+          <h5  style="color: white; margin-top: 20px;">Home</h5>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" onclick="gotohistory()" href="#" id="chg3">
+                <br>
+                <H5  style="color: white; margin-right: 10px;"> History & Heritage</H5>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick="gotoaboutus()"  id="chg3"><br>
+                <H5  style="color: white;  margin-right: 10px;"> About Us</H5>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"  onclick="gotocontactus" id="chg3"><br>
+                <H5 style="color: white; margin-right: 10px;"> Contact Us</H5>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick="gotologin()" id="chg3"><br>
+                <H5  style="color: white; margin-right: 10px;"> Login </H5>
+              </a>
+            </li>
+    
+          </ul>
+          <form class="d-flex" role="search" id="bt">
+    
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-primary" type="submit">Search</button>
+          </form>
         </div>
-      </nav>
-    </div>
+      </div>
+    </nav>
+
       <br>
       <br>
     <center>
@@ -99,7 +112,7 @@
     <br />
     <br />
     <div class="container" style="display: flex; flex-direction: row; justify-content:space-between; margin-bottom: 40px;">
-      <div class="card" style="width: 300px;">
+      <div class="card" style="width: 300px;" id="Buttonn">
         <h2 class="card-title" style="margin-left: 10px;">LUCKNOW</h2>
         <img
           src="https://www.scrolldroll.com/wp-content/uploads/2018/05/Lucknow-Featured.png"
@@ -116,7 +129,7 @@
             the eponymous district and division. The city has always been a
             multicultural city with courtly manners, beautiful gardens, poetry,
             music, and fine cuisine patronized by the Persian-loving Shia Nawabs
-            of the city.
+            of the city.<br> <a href="https://www.google.com/maps/d/embed?mid=11aA5Ayrb0x3KskaIJx-RmR4-VOo&hl=en&ehbc=2E312F" >Locate the city on map</a>
           </p>
           <a
             href="https://en.wikipedia.org/wiki/Lucknow"
@@ -137,18 +150,12 @@
         />
         <div class="card-body">
           <p class="card-text">
-            Lucknow is the capital and largest city of the Indian state of Uttar
-            Pradesh. It is also the second largest urban agglomeration in Uttar
-            Pradesh after Kanpur. Lucknow is the administrative headquarters of
-            the eponymous district and division. The city has always been a
-            multicultural city with courtly manners, beautiful gardens, poetry,
-            music, and fine cuisine patronized by the Persian-loving Shia Nawabs
-            of the city.
+            Agra, a city in northern India, is renowned for its historical and architectural gem, the iconic Taj Mahal. This UNESCO World Heritage Site, constructed in the 17th century by Mughal Emperor Shah Jahan in memory of his wife Mumtaz Mahal, stands as an epitome of eternal love and exquisite craftsmanship. Beyond the Taj Mahal, Agra boasts other notable landmarks like Agra Fort, a colossal red sandstone fort showcasing Mughal grandeur, and Fatehpur Sikri, a deserted city reflecting architectural brilliance. 
           </p>
           <a
             href="https://en.wikipedia.org/wiki/Lucknow"
             class="btn btn-primary"
-            >Read more about lucknow</a
+            >Read more about agra</a
           >
         </div>
       </div>
@@ -164,18 +171,12 @@
         />
         <div class="card-body">
           <p class="card-text">
-            Lucknow is the capital and largest city of the Indian state of Uttar
-            Pradesh. It is also the second largest urban agglomeration in Uttar
-            Pradesh after Kanpur. Lucknow is the administrative headquarters of
-            the eponymous district and division. The city has always been a
-            multicultural city with courtly manners, beautiful gardens, poetry,
-            music, and fine cuisine patronized by the Persian-loving Shia Nawabs
-            of the city.
+            Kanpur, a bustling industrial city in Uttar Pradesh, India, is known for its significant role in the nation's economic landscape. Situated on the banks of the Ganges River, Kanpur is a major industrial and commercial hub, particularly recognized for its leather and textile industries. The city's historical fabric is woven with remnants of British colonial architecture, and it hosts the revered Kanpur Zoological Park.Kanpur stands as a dynamic center of commerce and culture in Northern India
           </p>
           <a
             href="https://en.wikipedia.org/wiki/Lucknow"
             class="btn btn-primary"
-            >Read more about lucknow</a
+            >Read more about kanpur</a
           >
         </div>
       </div>
@@ -191,18 +192,12 @@
         />
         <div class="card-body">
           <p class="card-text">
-            Lucknow is the capital and largest city of the Indian state of Uttar
-            Pradesh. It is also the second largest urban agglomeration in Uttar
-            Pradesh after Kanpur. Lucknow is the administrative headquarters of
-            the eponymous district and division. The city has always been a
-            multicultural city with courtly manners, beautiful gardens, poetry,
-            music, and fine cuisine patronized by the Persian-loving Shia Nawabs
-            of the city.
+            Varanasi, nestled on the banks of the sacred Ganges River, is one of the world's oldest continuously inhabited cities. A spiritual and cultural epicenter, it holds deep religious significance for Hindus. The city is adorned with ancient temples, vibrant ghats, and bustling markets. Pilgrims seek spiritual purification through the Ganga Aarti ceremonies, while the narrow alleys resonate with the timeless charm of Varanasi's traditional music and arts. Varanasi, with its profound spiritual aura, is a captivating tapestry of tradition and mysticism.
           </p>
           <a
             href="https://en.wikipedia.org/wiki/Lucknow"
             class="btn btn-primary"
-            >Read more about lucknow</a
+            >Read more about varanasi</a
           >
         </div>
       </div>
@@ -224,18 +219,12 @@
           />
           <div class="card-body">
             <p class="card-text">
-              Lucknow is the capital and largest city of the Indian state of Uttar
-              Pradesh. It is also the second largest urban agglomeration in Uttar
-              Pradesh after Kanpur. Lucknow is the administrative headquarters of
-              the eponymous district and division. The city has always been a
-              multicultural city with courtly manners, beautiful gardens, poetry,
-              music, and fine cuisine patronized by the Persian-loving Shia Nawabs
-              of the city.
+              Ayodhya, a sacred city in Uttar Pradesh, India, is revered as the birthplace of Lord Rama, a significant deity in Hinduism. Steeped in religious history, Ayodhya showcases ancient temples like the Ram Janmabhoomi and Hanuman Garhi. The city is a pilgrimage site for millions, especially during festivals like Diwali. Ayodhya's cultural landscape resonates with spirituality, and its serene ambiance attracts devotees and tourists alike, seeking a connection to India's rich mythological and historical heritage.
             </p>
             <a
               href="https://en.wikipedia.org/wiki/Lucknow"
               class="btn btn-primary"
-              >Read more about lucknow</a
+              >Read more about ayodhya</a
             >
           </div>
         </div>
@@ -251,18 +240,12 @@
           />
           <div class="card-body">
             <p class="card-text">
-              Lucknow is the capital and largest city of the Indian state of Uttar
-              Pradesh. It is also the second largest urban agglomeration in Uttar
-              Pradesh after Kanpur. Lucknow is the administrative headquarters of
-              the eponymous district and division. The city has always been a
-              multicultural city with courtly manners, beautiful gardens, poetry,
-              music, and fine cuisine patronized by the Persian-loving Shia Nawabs
-              of the city.
+              Vrindavan, a mystical town in Uttar Pradesh, India, is celebrated as the sacred playground of Lord Krishna. Dotted with ornate temples, serene ghats, and vibrant markets, Vrindavan exudes a spiritual aura. Pilgrims flock to experience the divine atmosphere, particularly during festivals like Holi. The town's charm lies in its association with the legendary tales of Krishna's youthful exploits, making it a revered destination for devotees seeking a profound connection with Hindu mythology and spirituality.
             </p>
             <a
               href="https://en.wikipedia.org/wiki/Lucknow"
               class="btn btn-primary"
-              >Read more about lucknow</a
+              >Read more about Vrindavan</a
             >
           </div>
         </div>
@@ -278,18 +261,12 @@
           />
           <div class="card-body">
             <p class="card-text">
-              Lucknow is the capital and largest city of the Indian state of Uttar
-              Pradesh. It is also the second largest urban agglomeration in Uttar
-              Pradesh after Kanpur. Lucknow is the administrative headquarters of
-              the eponymous district and division. The city has always been a
-              multicultural city with courtly manners, beautiful gardens, poetry,
-              music, and fine cuisine patronized by the Persian-loving Shia Nawabs
-              of the city.
+              Jhansi, a historic city in Uttar Pradesh, India, is renowned for its pivotal role in the Indian Rebellion of 1857. The imposing Jhansi Fort, perched atop a rocky hill, narrates tales of Rani Lakshmibai's valiant defense against the British. This stronghold stands as a symbol of courage and resistance. Beyond its historical significance, Jhansi boasts vibrant markets, ancient temples, and a rich cultural heritage, making it a compelling destination for those interested in India's dynamic history and traditions.
             </p>
             <a
               href="https://en.wikipedia.org/wiki/Lucknow"
               class="btn btn-primary"
-              >Read more about lucknow</a
+              >Read more about JHASI</a
             >
           </div>
         </div>
@@ -305,18 +282,12 @@
           />
           <div class="card-body">
             <p class="card-text">
-              Lucknow is the capital and largest city of the Indian state of Uttar
-              Pradesh. It is also the second largest urban agglomeration in Uttar
-              Pradesh after Kanpur. Lucknow is the administrative headquarters of
-              the eponymous district and division. The city has always been a
-              multicultural city with courtly manners, beautiful gardens, poetry,
-              music, and fine cuisine patronized by the Persian-loving Shia Nawabs
-              of the city.
+              Aligarh, situated in the northern Indian state of Uttar Pradesh, is known for its cultural diversity, historical significance, and educational institutions. The city is home to the prestigious Aligarh Muslim University (AMU), a renowned educational center that has played a pivotal role in shaping India's academic landscape. Aligarh also boasts architectural gems like Aligarh Fort and Sir Syed Masjid. The city's bustling markets, vibrant street life, and a mix of historical and modern elements make it a unique and dynamic urban center in the region.
             </p>
             <a
               href="https://en.wikipedia.org/wiki/Lucknow"
               class="btn btn-primary"
-              >Read more about lucknow</a
+              >Read more about Aligarh</a
             >
           </div>
         </div>
@@ -335,18 +306,12 @@
           />
           <div class="card-body">
             <p class="card-text">
-              Lucknow is the capital and largest city of the Indian state of Uttar
-              Pradesh. It is also the second largest urban agglomeration in Uttar
-              Pradesh after Kanpur. Lucknow is the administrative headquarters of
-              the eponymous district and division. The city has always been a
-              multicultural city with courtly manners, beautiful gardens, poetry,
-              music, and fine cuisine patronized by the Persian-loving Shia Nawabs
-              of the city.
+              Fatehpur is a city in the Indian state of Uttar Pradesh, and it encompasses both Fatehpur City and Fatehpur District. The historical significance of Fatehpur is highlighted by Fatehpur Sikri, a UNESCO World Heritage Site and a well-preserved Mughal architectural masterpiece. Emperor Akbar founded this city in the 16th century, but it was later abandoned due to water scarcity. Fatehpur Sikri's structures, including the Buland Darwaza and Jama Masjid, showcase Mughal grandeur. Today, Fatehpur serves as a cultural and historical treasure, attracting tourists and history enthusiasts from around the world.
             </p>
             <a
               href="https://en.wikipedia.org/wiki/Lucknow"
               class="btn btn-primary"
-              >Read more about lucknow</a
+              >Read more about fatehpur</a
             >
           </div>
         </div>
@@ -362,18 +327,12 @@
           />
           <div class="card-body">
             <p class="card-text">
-              Lucknow is the capital and largest city of the Indian state of Uttar
-              Pradesh. It is also the second largest urban agglomeration in Uttar
-              Pradesh after Kanpur. Lucknow is the administrative headquarters of
-              the eponymous district and division. The city has always been a
-              multicultural city with courtly manners, beautiful gardens, poetry,
-              music, and fine cuisine patronized by the Persian-loving Shia Nawabs
-              of the city.
+              Sarnath, located near Varanasi in Uttar Pradesh, India, holds immense religious and historical significance in Buddhism. It is the place where Lord Buddha is said to have given his first sermon after attaining enlightenment. The Dhamek Stupa and the Ashoka Pillar are prominent structures in Sarnath, reflecting the rich Buddhist heritage. Pilgrims and tourists visit Sarnath to explore its archaeological ruins, museums, and the tranquil Deer Park, seeking a deeper understanding of Buddhism's origins and its impact on the cultural tapestry of India.
             </p>
             <a
               href="https://en.wikipedia.org/wiki/Lucknow"
               class="btn btn-primary"
-              >Read more about lucknow</a
+              >Read more about SARNATH</a
             >
           </div>
         </div>
@@ -401,7 +360,7 @@
             <a
               href="https://en.wikipedia.org/wiki/Lucknow"
               class="btn btn-primary"
-              >Read more about lucknow</a
+              >Read more about kushinagar</a
             >
           </div>
         </div>
@@ -433,6 +392,33 @@
         </div>
   
       </div>
+      <script>
+     document.getElementById("Buttonn").addEventListener("click", function() {
+      window.location.href = "./lucknow.html";
+  });
+  
+
+      function gotohome(){
+    window.location.href="1.html"
+  }
+  function gotoaboutus() {
+             
+             window.location.href = 'aboutus.html';
+         }
+  function gotocontactus() {
+             
+             window.location.href = 'contactus.html';
+         }
+  function gotohistory() {
+             
+             window.location.href = 'history.html';
+         }
+         
+  function gotologin() {
+             
+             window.location.href = 'login_page.html';
+         }
+      </script>
   
      
   </body>
