@@ -14,6 +14,10 @@ function refer4()
 {
     location.href="login.html";
 }
+function gotoexplore(){
+  location.href="WEBD.html";
+}
+
 let t = document.getElementById("chg1");
 
 t.addEventListener("mouse Hover", refer2());
