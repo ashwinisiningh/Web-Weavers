@@ -104,8 +104,8 @@ video {
         justify-content: center;
         padding:30px 30px;
         position: relative;
-        top:400px;
-        left: 200px;
+        top:30%;
+        left: 10%;
         border-radius: 5%;
         opacity:0.7;
 }
